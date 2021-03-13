@@ -1,3 +1,29 @@
+.heading {
+	min-height: 80vh;
+	height: 80vh;
+	color: white;
+	display: flex;
+	background-color: #6868E1;
+}
+
+.heading > * {
+	width: 50%;
+	flex-grow: 1;
+	padding: 4rem;
+	padding-bottom: 0;
+}
+
+.heading-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.heading-image {
+	object-fit: cover;
+	object-position: 0 0;
+}
+
 #testing {
 	background: antiquewhite;
 }
