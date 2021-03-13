@@ -1,3 +1,4 @@
+﻿<!doctype html>
 <html lang="en">
 <head>
 	<title>Data 101</title>
@@ -7,10 +8,160 @@
 	<meta name="Description" content="Data 101">
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
-	<div id="testing">
+	<!--Header-->
+	You are a data scientist for a wonderful app and you have to make decisions about it based on ~data~
+	<!--First question-->
+	<div class="collapse" id="question1">
+		<div class="card card-body question-section">
+			<img class="question-image" src="https://media.istockphoto.com/photos/portrait-of-crazy-beautiful-stylish-brunette-young-woman-in-glasses-picture-id1182382461?k=6&m=1182382461&s=612x612&w=0&h=8NaEv3ZP6Yn1c3AQIqvHcm8txKuun2Qhxm5pkelL7vQ=">
+			<div class="question-text">
+				<h1>Monday Morning</h1>
+				<p>On Monday morning Casey, one of the programmers for the app, comes over to your desk.</p>
+				<div class="quote">I finally fixed the bug where the app crashes when you click on <b>Toby the Terrier</b>! But... my fix <i>causes</i> a crash on <b>Sabrina the Teenaged Kit</b>. What should I do?</div>
+				<p>Take a guess at what data you want to look at before you answer her question. Choose carefully, you can only pick one!</p>
+				<h5>What do you want to know?</h5>
+				<select class="form-select" onchange="dataChosen(1)">
+					<option selected>Open this select menu</option>
+					<option value="1">I want to see how many times users tapped on each pet</option>
+					<option value="2">I want to see how many users tapped on each pet</option>
+					<option value="3">I want to see reviews mentioning each pet</option>
+				</select>
+				<div class="collapse" id="question1data">
+					<!-- The data -->
+					<div class="data-reveal">
+						<div class="collapse" id="question1option1">
+							I'm a pie chart telling you that Sabrina the Teenage Kit gets clicked on a lot more than any other pet
+						</div>
+						<div class="collapse" id="question1option2">
+							<img src="pictures\data\petsbyusers.png" />
+						</div>
+						<div class="collapse" id="question1option3">
+							Word cloud of reviews that doesn't tell you much of anything
+						</div>
+					</div>
+					<!-- The choices -->
+					<div class="options">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12164822/Cairn-Terrier-sitting-in-the-grass.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Fix Toby the Terrier</h5>
+								<p class="card-text">Tell Casey to fix Toby now. We can fix Sabrina later!</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(1, 0)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://i.pinimg.com/originals/9f/ee/df/9feedf287c5e4cac72770d6b177b29a7.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Keep Working On It</h5>
+								<p class="card-text">Tell Casey not to fix Toby until she is sure that her code won't break Sabrina.</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(1, 1)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<!--Second question-->
+	<div class="collapse" id="question2">
+		<div class="card card-body question-section">
+			<img class="question-image" src="https://previews.123rf.com/images/ljupco/ljupco1606/ljupco160600016/57736113-young-focused-artist-painting-on-a-canvas-isolated-on-white-background.jpg">
+			<div class="question-text">
+				<h1>Tuesday Morning</h1>
+				<p>One of your friends has some free time today and is offering to draw a new type of pet for your app! What should they add?</p>
+				<p>Take a guess at what data you want to look at before you decide. Choose carefully, you can only pick one!</p>
+				<h5>What do you want to know?</h5>
+				<select class="form-select" onchange="dataChosen(2)">
+					<option selected>Open this select menu</option>
+					<option value="1">I want to see what pets people search for in the app</option>
+					<option value="2">I want to take see what my coworker's favorite animals are</option>
+					<option value="3">I want to see reviews</option>
+				</select>
+				<div class="collapse" id="question2data">
+					<!-- The data -->
+					<div class="data-reveal">
+						<div class="collapse" id="question2option1">
+							Word cloud with "bunny" and "rabbit" sticking out pretty big
+						</div>
+						<div class="collapse" id="question2option2">
+							Table of your coworkers and their favorite animals and two chose birds
+						</div>
+						<div class="collapse" id="question2option3">
+							Word cloud of reviews that doesn't tell you much of anything
+						</div>
+					</div>
+					<!-- The choices -->
+					<div class="options">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://www.petmd.com/sites/default/files/styles/article_image/public/all-about-cockatiels.jpg?itok=i0DpVa0e">
+							<div class="card-body">
+								<h5 class="card-title">Birds</h5>
+								<p class="card-text">Ask your friend to add some birds!</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(2, 0)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2020/07/bunny.jpeg?quality=80&strip=all&ssl=1">
+							<div class="card-body">
+								<h5 class="card-title">Rabbits</h5>
+								<p class="card-text">Ask your friend to draw you some bunnies!</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(2, 1)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Third question-->
+	<div class="collapse" id="question3">
+		<div class="card card-body">
+			Third question
+		</div>
+	</div>
+
+	<!--Fourth question-->
+	<div class="collapse" id="question4">
+		<div class="card card-body">
+			Fourth question
+		</div>
+	</div>
+
+	<!--Fifth question-->
+	<div class="collapse" id="question5">
+		<div class="card card-body">
+			Fifth question
+		</div>
+	</div>
+
+	<!--Sixth question-->
+	<div class="collapse" id="question1">
+		<div class="card card-body">
+			Sixth question
+		</div>
+	</div>
+
+	<!--Final results-->
+	<div class="collapse" id="final">
+		<div class="card card-body">
+			Results
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
