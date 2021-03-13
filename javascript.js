@@ -11,14 +11,21 @@ function dataChosen(questionNumber) {
 }
 
 function optionChosen(questionNumber, answerIndex) {
+	document.querySelectorAll("#question" + questionNumber + "data button").forEach((button) => button.disabled = true);
+
+	new bootstrap.Collapse(document.getElementById("question" + questionNumber + "choice" + answerIndex));
+	new bootstrap.Collapse(document.getElementById("question" + questionNumber + "results"));
+
 	let nextDiv = "final";
 	if (questionNumber <= 5) {
 		nextDiv = "question" + (questionNumber + 1);
 	}
+
 	new bootstrap.Collapse(document.getElementById(nextDiv));
 
+
 	setTimeout(function () {
-		document.getElementById(nextDiv).scrollIntoView();
+		document.getElementById("question" + questionNumber + "results").scrollIntoView();
 	}, 400);
 
 }

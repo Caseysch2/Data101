@@ -51,3 +51,20 @@
 .data-reveal img {
 	width: 100%;
 }
+
+.results > .collapse {
+	text-align: center;
+	padding: 2em;
+}
+
+.awesome {
+	background-color: darkseagreen;
+}
+
+.okay {
+	background-color: coral;
+}
+
+.bad {
+	background-color: indianred;
+}
