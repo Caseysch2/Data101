@@ -186,10 +186,88 @@ function drawChart(questionNumber, answerIndex) {
 			});
 			break;
 		case "4-1":
-			break;
-		case "4-2":
+			new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ['< 13 Years Old', '13-17', '18-24', '24-36', '36-64', '> 64 Years Old'],
+					datasets: [{
+						label: 'App Users',
+						data: [339, 423, 382, 167, 83, 21],
+						backgroundColor: backgroundColors,
+						borderColor: "white",
+						borderWidth: 1
+					},
+					{
+						label: 'Poll Responses',
+						data: [32, 103, 251, 113, 63, 837],
+						backgroundColor: backgroundColors,
+						borderColor: "white",
+						borderWidth: 1
+					}]
+				},
+				options: {
+					legend: {
+						display: false,
+					},
+					title: {
+						display: true,
+						text: "Ages of App Users and Poll Responders",
+					}
+				}
+			});
 			break;
 		case "4-3":
+			new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: ["Thurs 4pm-12am",
+						"Fri 12am-8am", "Fri 8am-4pm", "Fri 4pm-12am",
+						"Sat 12am-8am", "Sat 8am-4pm", "Sat 4pm-12am",
+						"Sun 12am-8am", "Sun 8am-4pm", "Sun 4pm-12am",
+						"Mon 12am-8am", "Mon 8am-4pm", "Mon 4pm-12am",
+						"Tues 12am-8am", "Tues 8am-4pm", "Tues 4am-12am",
+						"Wed 12am-8am"
+					],
+					datasets: [{
+						data: [ 35,
+							5, 36, 68,
+							8, 42, 73,
+							3, 29, 71,
+							7, 16, 61,
+							230, 14, 43,
+							21
+						],
+						fill: false,
+					}]
+				},
+				options: {
+					legend: {
+						display: false,
+					},
+					title: {
+						display: true,
+						text: "When People Responded to the Poll",
+					},
+					scales: {
+						yAxes: [
+							{
+								scaleLabel: {
+									display: true,
+									labelString: 'Number of Poll Responses'
+								}
+							}
+						],
+						xAxes: [
+							{
+								scaleLabel: {
+									display: true,
+									labelString: 'Time'
+								}
+							}
+						],
+					}
+				}
+			});
 			break;
 		case "5-1":
 			break;

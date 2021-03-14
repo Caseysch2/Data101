@@ -40,7 +40,7 @@
 .heading-image {
 	object-fit: cover;
 	object-position: 0 0;
-	min-width: 400px;
+	min-width: 300px;
 }
 
 #testing {
@@ -52,7 +52,6 @@
 	border: 2px solid #0000005c;
 	border-radius: 10px;
 	padding: 1rem;
-	margin: .5rem;
 	background: lavender;
 }
 
@@ -74,7 +73,7 @@
 .question-image {
 	object-fit: contain;
 	align-self: flex-start;
-	min-width: 400px;
+	min-width: 300px;
 }
 
 .card-img-top {
@@ -94,8 +93,9 @@
 }
 
 .data-reveal {
-	margin: 2rem;
-	min-width: 400px;
+	margin: auto;
+	min-width: 300px;
+	max-width: 100%;
 }
 
 .data-reveal img {
@@ -117,6 +117,10 @@
 
 .bad {
 	background-color: indianred;
+}
+
+table {
+	margin: 1em;
 }
 
 td, th {

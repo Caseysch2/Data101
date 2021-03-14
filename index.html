@@ -43,7 +43,7 @@
 					<!-- The data -->
 					<div class="data-reveal">
 						<img class="collapse" id="question1option3" src="pictures/data/q1wc.png">
-						<canvas id="question1chart" width="400" height="200"></canvas>
+						<canvas id="question1chart" width="300" height="200"></canvas>
 					</div>
 					<!-- The choices -->
 					<h5>What are you going to do?</h5>
@@ -113,7 +113,7 @@
 							</table>
 						</div>
 						<img class="collapse" id="question2option3" src="pictures/data/q2a3.png">
-						<canvas id="question2chart" width="400" height="200"></canvas>
+						<canvas id="question2chart" width="300" height="200"></canvas>
 					</div>
 					<!-- The choices -->
 					<h5>Which animal do you want your friend to draw?</h5>
@@ -171,7 +171,7 @@
 				<div class="collapse" id="question3data">
 					<!-- The data -->
 					<div class="data-reveal">
-						<canvas id="question3chart" width="400" height="200"></canvas>
+						<canvas id="question3chart" width="300" height="200"></canvas>
 					</div>
 					<!-- The choices -->
 					<h5>How Important Is This Bug?</h5>
@@ -216,29 +216,29 @@
 			<img class="question-image" src="https://thumbs.dreamstime.com/z/man-worried-looking-clipboard-studio-shot-15301034.jpg">
 			<div class="question-text">
 				<h1>Wednesday Afternoon</h1>
-				<p>You meet the social media expert in the hall and he looks worried. You ask him what's up and he says:</p>
-				<div class="quote">I took a poll to see what new theme the users want to see in the app. But I think that someone cheated! These results don't match what I expected, at all.</div>
+				<p>You meet the social media expert in the hall and he looks worried. You ask him what's going on and he says:</p>
+				<div class="quote">I took a poll to see what new theme the users want to see in the app. <b>But I think that someone cheated!</b> These results aren't even close to what I expected!</div>
 				<p>You agree to help him out by taking a look at the data yourself.</p>
 				<h5>What do you want to know?</h5>
 				<select class="form-select" onchange="dataChosen(4)">
 					<option selected>Choose your question</option>
-					<option value="1">Compare app users and survey responders by age range</option>
-					<option value="2">Compare app users and survey responders by geography</option>
-					<option value="3">Look at what times the survery responses were given</option>
+					<option value="1">Do the age range of our users look the same as the age range of the poll responders?</option>
+					<option value="2">Do the locations of our users look the same as the locations of the poll responders?</option>
+					<option value="3">When did people respond to the poll?</option>
 				</select>
 				<div class="collapse" id="question4data">
 					<!-- The data -->
 					<div class="data-reveal">
-						<div class="collapse" id="question4option1">
-							Pair of bar charts. There's a ton of survey responders who said their age was 70, but you only have a few >60 year olds on your app
-						</div>
 						<div class="collapse" id="question4option2">
-							Pair of maps. There's a ton of survey responders who said their location was Antartica, but you don't have users there.
+							<table>
+								<tr><th>Country</th><th>App Users</th><th>Poll Responders</th></tr>
+								<tr><td>United States</td><td>231</td><td>216</td></tr>
+								<tr><td>UK</td><td>422</td><td>410</td></tr>
+								<tr><td>Antarctica</td><td>1</td><td>832</td></tr>
+								<tr><td>Canada</td><td>168</td><td>83</td></tr>
+							</table>
 						</div>
-						<div class="collapse" id="question4option3">
-							Time chart. There's a huuuuuuge spike of responses at a particular time.
-						</div>
-						<canvas id="question4chart" width="400" height="200"></canvas>
+						<canvas id="question4chart" width="300" height="200"></canvas>
 					</div>
 					<!-- The choices -->
 					<h5>What Do You Think?</h5>
@@ -247,7 +247,7 @@
 							<img class="card-img-top" src="https://c8.alamy.com/comp/KXC819/smart-four-colleagues-conducting-poll-KXC819.jpg">
 							<div class="card-body">
 								<h5 class="card-title">Trust the Poll</h5>
-								<p class="card-text">Tell him that the poll is probably accurate, you should respect the theme that the users chose.</p>
+								<p class="card-text">Tell him that the poll is probably accurate. You should respect the theme that the users chose!</p>
 								<button type="button" class="btn btn-primary" onclick="optionChosen(4, 0)">
 									Choose this Option
 								</button>
@@ -273,7 +273,7 @@
 			The new theme is released. Users don't seem to like it.
 		</div>
 		<div class="collapse awesome" id="question4choice1">
-			With your help, the social media expert was able to figure out what theme should have won the poll. You can see that a lot of users chose the new theme as soon as it was released!
+			With your help, the social media expert was able to figure out what theme <b>should</b> have won the poll. You can see that a lot of users switched to the new theme as soon as it was released!
 		</div>
 	</div>
 
@@ -303,7 +303,7 @@
 						<div class="collapse" id="question5option3">
 							Some real data chart of when people post to social media
 						</div>
-						<canvas id="question5chart" width="400" height="200"></canvas>
+						<canvas id="question5chart" width="300" height="200"></canvas>
 					</div>
 					<!-- The choices -->
 					<h5>When is the Best Time For Your Users?</h5>
@@ -368,7 +368,7 @@
 						<div class="collapse" id="question6option3">
 							Word cloud: Searches mention a lot of dog breeds, pretty evenly weighted. The biggest ones are dog breeds you already have.
 						</div>
-						<canvas id="question6chart" width="400" height="200"></canvas>
+						<canvas id="question6chart" width="300" height="200"></canvas>
 					</div>
 					<!-- The choices -->
 					<h5>What Dog Would Your Users Like Best?</h5>
