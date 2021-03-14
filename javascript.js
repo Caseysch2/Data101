@@ -89,7 +89,7 @@ function drawChart(questionNumber, answerIndex) {
 					title: {
 						display: true,
 						text: "How Many Times Each Pet Has Been Tapped",
-					}
+					},
 				}
 			});
 			break;
@@ -117,10 +117,73 @@ function drawChart(questionNumber, answerIndex) {
 			});
 			break;
 		case "3-1":
+			new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ['Android Phone', 'iPhone', 'Computer', 'iPad', 'Android Tablet'],
+					datasets: [{
+						data: [1246, 1346, 607, 3, 10],
+						backgroundColor: backgroundColors,
+						borderColor: "white",
+						borderWidth: 1
+					}]
+				},
+				options: {
+					legend: {
+						display: false,
+					},
+					title: {
+						display: true,
+						text: "Number of Times Game Was Installed On Each Platform",
+					}
+				}
+			});
 			break;
 		case "3-2":
+			new Chart(ctx, {
+				type: 'pie',
+				data: {
+					labels: ["Mentions 'iPad'", "Mentions 'Bug'", "Mentions both", "Mentions neither"],
+					datasets: [{
+						data: [1, 34, 1, 64],
+						backgroundColor: backgroundColors,
+						borderColor: "white",
+						borderWidth: 1
+					}]
+				},
+				options: {
+					legend: {
+						position: 'bottom',
+					},
+					title: {
+						display: true,
+						text: "Percentage of Reviews Mentioning 'iPad' or 'Bug'",
+					}
+				}
+			});
 			break;
 		case "3-3":
+			new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ['Android Phone', 'iPhone', 'iPad', 'Android Tablet'],
+					datasets: [{
+						data: [2300, 700, 346, 753],
+						backgroundColor: backgroundColors,
+						borderColor: "white",
+						borderWidth: 1
+					}]
+				},
+				options: {
+					legend: {
+						display: false,
+					},
+					title: {
+						display: true,
+						text: "Worldwide Users (In Millions)",
+					}
+				}
+			});
 			break;
 		case "4-1":
 			break;

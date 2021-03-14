@@ -94,6 +94,7 @@
 }
 
 .data-reveal {
+	margin: 2rem;
 	min-width: 400px;
 }
 
@@ -103,7 +104,7 @@
 
 .results > .collapse {
 	text-align: center;
-	padding: 2em;
+	padding: 2rem;
 }
 
 .awesome {
@@ -118,15 +119,7 @@
 	background-color: indianred;
 }
 
-canvas {
-	margin: 2em;
-}
-
-table {
-	margin: 1em;
-}
-
 td, th {
 	border: 1px solid rebeccapurple !important;
-	padding: .1em 1em .1em .5em;
+	padding: .1rem 1rem .1rem .5rem;
 }
