@@ -121,3 +121,12 @@
 canvas {
 	margin: 2em;
 }
+
+table {
+	margin: 1em;
+}
+
+td, th {
+	border: 1px solid rebeccapurple !important;
+	padding: .1em 1em .1em .5em;
+}

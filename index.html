@@ -35,9 +35,9 @@
 				<h5>What do you want to know?</h5>
 				<select class="form-select" onchange="dataChosen(1)">
 					<option selected>Choose your question</option>
-					<option value="1">I want to see how many TIMES each pet was tapped</option>
-					<option value="2">I want to see how many USERS tapped each pet</option>
-					<option value="3">I want to see reviews MENTIONING each pet</option>
+					<option value="1">How often is each pet tapped?</option>
+					<option value="2">How many users tap each pet?</option>
+					<option value="3">What do the reviews say about the pets?</option>
 				</select>
 				<div class="collapse" id="question1data">
 					<!-- The data -->
@@ -75,10 +75,10 @@
 	</div>
 	<div class="collapse results" id="question1results">
 		<div class="collapse awesome" id="question1choice0">
-			You get a couple 1-star reviews from users about Sabrina, but a lot of "thank you"s and 5-star reviews now that Toby is working!
+			You get a couple bad reviews from users about Sabrina, but a lot of great reviews now that Toby is working!
 		</div>
 		<div class="collapse okay" id="question1choice1">
-			The app is getting a lot of 1-star reviews complaining that Toby still isn't fixed. Hope the programmer can resolve that soon!
+			The app is getting a lot of bad reviews complaining that Toby still isn't fixed. Hopefully the programmer can resolve that soon!
 		</div>
 	</div>
 
@@ -93,25 +93,30 @@
 				<h5>What do you want to know?</h5>
 				<select class="form-select" onchange="dataChosen(2)">
 					<option selected>Choose your question</option>
-					<option value="1">I want to see what pets people search for in the app</option>
-					<option value="2">I want to take see what my coworker's favorite animals are</option>
-					<option value="3">I want to see reviews</option>
+					<option value="1">What pets do people try to search for in the app?</option>
+					<option value="2">What are my coworkers' favorite animals?</option>
+					<option value="3">What pets are mentioned in the reviews?</option>
 				</select>
 				<div class="collapse" id="question2data">
 					<!-- The data -->
 					<div class="data-reveal">
-						<div class="collapse" id="question2option1">
-							Word cloud with "bunny" and "rabbit" sticking out pretty big
-						</div>
+						<img class="collapse" id="question2option1" src="pictures/data/q2a1.png">
 						<div class="collapse" id="question2option2">
-							Table of your coworkers and their favorite animals and two chose birds
+							<table>
+								<tr><th>Coworker Name</th><th>Favorite Animal</th></tr>
+								<tr><td>Evie</td><td>Cockatoo</td></tr>
+								<tr><td>Jacob</td><td>Crow</td></tr>
+								<tr><td>Connor</td><td>Snake</td></tr>
+								<tr><td>Kassandra</td><td>Hare</td></tr>
+								<tr><td>Alexi</td><td>Alligator</td></tr>
+								<tr><td>Desmond</td><td>Goldfinch</td></tr>
+							</table>
 						</div>
-						<div class="collapse" id="question2option3">
-							Word cloud of reviews that doesn't tell you much of anything
-						</div>
+						<img class="collapse" id="question2option3" src="pictures/data/q2a3.png">
 						<canvas id="question2chart" width="400" height="200"></canvas>
 					</div>
 					<!-- The choices -->
+					<h5>Which animal do you want your friend to draw?</h5>
 					<div class="options">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="https://www.petmd.com/sites/default/files/styles/article_image/public/all-about-cockatiels.jpg?itok=i0DpVa0e">
@@ -140,7 +145,7 @@
 	</div>
 	<div class="collapse results" id="question2results">
 		<div class="collapse awesome" id="question2choice0">
-			Your coworkers are happy with the new birds! The app doesn't see many new users or reviews mentioning the new animals, but people seem to like them.
+			Your coworkers are happy with the new birds! You don't see many new users (or reviews mentioning the new animals), but people seem to like them.
 		</div>
 		<div class="collapse awesome" id="question2choice1">
 			Wow, your users really wanted to see bunnies! Everyone at the office is talking about how successful it was. How did you know?
@@ -182,6 +187,7 @@
 						<canvas id="question3chart" width="400" height="200"></canvas>
 					</div>
 					<!-- The choices -->
+					<h5>How Important Is This Bug?</h5>
 					<div class="options">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="https://image.shutterstock.com/image-photo/closeup-business-people-hands-typing-260nw-1861205833.jpg">
@@ -248,6 +254,7 @@
 						<canvas id="question4chart" width="400" height="200"></canvas>
 					</div>
 					<!-- The choices -->
+					<h5>What Do You Think?</h5>
 					<div class="options">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="https://c8.alamy.com/comp/KXC819/smart-four-colleagues-conducting-poll-KXC819.jpg">
@@ -312,6 +319,7 @@
 						<canvas id="question5chart" width="400" height="200"></canvas>
 					</div>
 					<!-- The choices -->
+					<h5>When is the Best Time For Your Users?</h5>
 					<div class="options">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="https://image.shutterstock.com/image-photo/tranquil-beach-scene-exotic-tropical-260nw-644740495.jpg">
@@ -376,6 +384,7 @@
 						<canvas id="question6chart" width="400" height="200"></canvas>
 					</div>
 					<!-- The choices -->
+					<h5>What Dog Would Your Users Like Best?</h5>
 					<div class="options">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Golden_Retriever_Carlos_%2810581910556%29.jpg/1200px-Golden_Retriever_Carlos_%2810581910556%29.jpg">

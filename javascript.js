@@ -116,17 +116,6 @@ function drawChart(questionNumber, answerIndex) {
 				}
 			});
 			break;
-		case "1-3":
-			// Some options create images, not charts.
-			document.getElementById("question" + 1 + "chart").style.display = 'none'
-			new bootstrap.Collapse(document.getElementById("question" + questionNumber + "option" + answerIndex));
-			break;
-		case "2-1":
-			break;
-		case "2-2":
-			break;
-		case "2-3":
-			break;
 		case "3-1":
 			break;
 		case "3-2":
@@ -150,6 +139,11 @@ function drawChart(questionNumber, answerIndex) {
 		case "6-2":
 			break;
 		case "6-3":
+			break;
+		default:
+			// Some options create images, not charts.
+			document.getElementById("question" + questionNumber + "chart").style.display = 'none'
+			new bootstrap.Collapse(document.getElementById("question" + questionNumber + "option" + answerIndex));
 			break;
 	}
 }
