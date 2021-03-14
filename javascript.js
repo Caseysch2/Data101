@@ -237,6 +237,8 @@ function drawChart(questionNumber, answerIndex) {
 							230, 14, 43,
 							21
 						],
+						borderColor: "black",
+						backgroundColor: "black",
 						fill: false,
 					}]
 				},
@@ -270,10 +272,80 @@ function drawChart(questionNumber, answerIndex) {
 			});
 			break;
 		case "5-1":
+			new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+					datasets: [{
+						data: [32, 64, 16, 32, 24, 82, 21],
+						backgroundColor: backgroundColors[0],
+						borderColor: "white",
+						borderWidth: 1
+					}]
+				},
+				options: {
+					legend: {
+						display: false,
+					},
+					title: {
+						display: true,
+						text: "Reviews Posted Each Day",
+					}
+				}
+			});
 			break;
 		case "5-2":
+			new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+					datasets: [{
+						data: [864, 589, 235, 340, 126, 456, 1269],
+						backgroundColor: backgroundColors[0],
+						borderColor: "white",
+						borderWidth: 1
+					}]
+				},
+				options: {
+					legend: {
+						display: false,
+					},
+					title: {
+						display: true,
+						text: "Active Users Per Day",
+					}
+				}
+			});
 			break;
 		case "5-3":
+			new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+					datasets: [{
+						data: [48, 72, 63, 64, 66, 68, 58],
+						backgroundColor: backgroundColors[0],
+						borderColor: "white",
+						borderWidth: 1
+					}]
+				},
+				options: {
+					legend: {
+						display: false,
+					},
+					title: {
+						display: true,
+						text: "Average Number of Times Someone Checks Their Phone",
+					},
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero: true
+							}
+						}]
+					}
+				}
+			});
 			break;
 		case "6-1":
 			break;
