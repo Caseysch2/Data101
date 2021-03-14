@@ -16,6 +16,8 @@
 	color: white;
 	display: flex;
 	background-color: #6868E1;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 
@@ -36,6 +38,7 @@
 .heading-image {
 	object-fit: cover;
 	object-position: 0 0;
+	min-width: 400px;
 }
 
 #testing {
