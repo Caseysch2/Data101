@@ -12,7 +12,6 @@
 	
 .heading, .final-results {
 	min-height: 80vh;
-	height: 80vh;
 	color: white;
 	display: flex;
 	background-color: #6868E1;
@@ -38,9 +37,8 @@
 }
 
 .heading-image {
-	object-fit: cover;
-	object-position: 0 0;
 	min-width: 300px;
+	padding: 0;
 }
 
 #testing {
