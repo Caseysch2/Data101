@@ -1,3 +1,15 @@
+.banner {
+	font-size: small;
+	text-align: right;
+	background: #5050ab;
+	color: white;
+	padding: 1em;
+}
+
+.banner a {
+	color: white;
+}
+	
 .heading, .final-results {
 	min-height: 80vh;
 	height: 80vh;
