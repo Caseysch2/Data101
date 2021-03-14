@@ -1,4 +1,4 @@
-.heading {
+.heading, .final-results {
 	min-height: 80vh;
 	height: 80vh;
 	color: white;
@@ -6,7 +6,9 @@
 	background-color: #6868E1;
 }
 
-.heading > * {
+
+.heading > *,
+.final-results > * {
 	width: 50%;
 	flex-grow: 1;
 	padding: 4rem;

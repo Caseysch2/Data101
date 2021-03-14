@@ -79,7 +79,7 @@
 	</div>
 	<div class="collapse results" id="question1results">
 		<div class="collapse awesome" id="question1choice0">
-			You get a couple 1-star reviews from users about Sabrina, but a lot of "thank you"s and 5-star reviews now that Toby is working! 
+			You get a couple 1-star reviews from users about Sabrina, but a lot of "thank you"s and 5-star reviews now that Toby is working!
 		</div>
 		<div class="collapse okay" id="question1choice1">
 			The app is getting a lot of 1-star reviews complaining that Toby still isn't fixed. Hope Casey can resolve that soon!
@@ -152,36 +152,271 @@
 
 	<!--Third question-->
 	<div class="collapse" id="question3">
-		<div class="card card-body">
-			Third question
+		<div class="card card-body question-section">
+			<img class="question-image" src="https://media.gettyimages.com/photos/young-woman-on-floor-next-to-ipad-looking-sad-picture-id529430135">
+			<div class="question-text">
+				<h1>Wednesday Morning</h1>
+				<p>The project manager stops by your desk and shows you a problem she has with the app on her iPad.</p>
+				<p>None of the animal pictures show up!</p>
+				<p>She says that it's been like this for a really long time, and she wants to know how important it is to fix this.</p>
+				<h5>What should you find out first?</h5>
+				<select class="form-select" onchange="dataChosen(3)">
+					<option selected>Choose your question</option>
+					<option value="1">How many people install the app on each type of device (android phone, ipad, computer, etc)</option>
+					<option value="2">How many other people at the office see this bug</option>
+					<option value="3">How many reviews mention "ipad" or "bug"</option>
+					<option value="4">How many people in the world use ipads (word this better)</option>
+				</select>
+				<div class="collapse" id="question3data">
+					<!-- The data -->
+					<div class="data-reveal">
+						<div class="collapse" id="question3option1">
+							Pie chart saying that the PM is, like, the only one on an ipad
+						</div>
+						<div class="collapse" id="question3option2">
+							Table of coworkers where PM is the only one who said 'yes'
+						</div>
+						<div class="collapse" id="question3option3">
+							534 reviews, 100 mention 'bug', 3 mention 'ipad'
+						</div>
+						<div class="collapse" id="question3option4">
+							Some chart saying how many people use ipads (use real data)
+						</div>
+					</div>
+					<!-- The choices -->
+					<div class="options">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://image.shutterstock.com/image-photo/closeup-business-people-hands-typing-260nw-1861205833.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Really Important!</h5>
+								<p class="card-text">You should tell Casey to fix this right away!</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(3, 0)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://st3.depositphotos.com/1441511/17615/i/1600/depositphotos_176154214-stock-photo-worker-relaxing-in-office-relaxed.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Not So Important</h5>
+								<p class="card-text">You should tell Casey to get to this when she can.</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(3, 1)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="collapse results" id="question3results">
+		<div class="collapse awesome" id="question3choice0">
+			The bug gets fixed, and the project manager is really happy about it!
+		</div>
+		<div class="collapse awesome" id="question3choice1">
+			Casey completed the other feature she was working on, and the users loved it!
 		</div>
 	</div>
 
 	<!--Fourth question-->
 	<div class="collapse" id="question4">
-		<div class="card card-body">
-			Fourth question
+		<div class="card card-body question-section">
+			<img class="question-image" src="https://thumbs.dreamstime.com/z/man-worried-looking-clipboard-studio-shot-15301034.jpg">
+			<div class="question-text">
+				<h1>Wednesday Afternoon</h1>
+				<p>You meet the social media expert in the hall and he looks worried. You ask him what's up and he says:</p>
+				<div class="quote">I took a poll to see what new theme the users want to see in the app. But I think that someone cheated! These results don't match what I expected, at all.</div>
+				<p>You agree to help him out by taking a look at the data yourself.</p>
+				<h5>What do you want to know?</h5>
+				<select class="form-select" onchange="dataChosen(4)">
+					<option selected>Choose your question</option>
+					<option value="1">Compare app users and survey responders by age range</option>
+					<option value="2">Compare app users and survey responders by geography</option>
+					<option value="3">Look at what times the survery responses were given</option>
+				</select>
+				<div class="collapse" id="question4data">
+					<!-- The data -->
+					<div class="data-reveal">
+						<div class="collapse" id="question4option1">
+							Pair of bar charts. There's a ton of survey responders who said their age was 70, but you only have a few >60 year olds on your app
+						</div>
+						<div class="collapse" id="question4option2">
+							Pair of maps. There's a ton of survey responders who said their location was Antartica, but you don't have users there.
+						</div>
+						<div class="collapse" id="question4option3">
+							Time chart. There's a huuuuuuge spike of responses at a particular time.
+						</div>
+					</div>
+					<!-- The choices -->
+					<div class="options">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://c8.alamy.com/comp/KXC819/smart-four-colleagues-conducting-poll-KXC819.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Trust the Poll</h5>
+								<p class="card-text">Tell him that the poll is probably accurate, you should respect the theme that the users chose.</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(4, 0)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://st2.depositphotos.com/1003713/10307/i/950/depositphotos_103079474-stock-photo-disappointed-young-business-man-with.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Don't Trust the Poll</h5>
+								<p class="card-text">Tell him that there was definitely cheating going on, and he should figure out a different way of deciding on the next theme.</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(4, 1)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="collapse results" id="question4results">
+		<div class="collapse okay" id="question4choice0">
+			The new theme is released. Users don't seem to like it.
+		</div>
+		<div class="collapse awesome" id="question4choice1">
+			With your help, the social media expert was able to figure out what theme should have won the poll. You can see that a lot of users chose the new theme as soon as it was released!
 		</div>
 	</div>
 
 	<!--Fifth question-->
 	<div class="collapse" id="question5">
-		<div class="card card-body">
-			Fifth question
+		<div class="card card-body question-section">
+			<img class="question-image" src="https://previews.123rf.com/images/auremar/auremar1709/auremar170902289/85273220-confident-woman-in-wheelchair-with-her-mobile-phone.jpg">
+			<div class="question-text">
+				<h1>Thursday Afternoon</h1>
+				<p>The marketing expert wants to know when to post because no attention</p>
+				<h5>What do you want to know?</h5>
+				<select class="form-select" onchange="dataChosen(5)">
+					<option selected>Choose your question</option>
+					<option value="1">When reviews are posted</option>
+					<option value="2">When do users use app</option>
+					<option value="3">When people normally post on social media</option>
+				</select>
+				<div class="collapse" id="question5data">
+					<!-- The data -->
+					<div class="data-reveal">
+						<div class="collapse" id="question5option1">
+							bar chart of a week showing that reviews are mostly posted on fridays
+						</div>
+						<div class="collapse" id="question5option2">
+							Trend line showing that people use the app a LOT on weekends during the day, not-so-much on week days
+						</div>
+						<div class="collapse" id="question5option3">
+							Some real data chart of when people post to social media
+						</div>
+					</div>
+					<!-- The choices -->
+					<div class="options">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://image.shutterstock.com/image-photo/tranquil-beach-scene-exotic-tropical-260nw-644740495.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Weekend</h5>
+								<p class="card-text">You tell her to schedule the post for this weekend</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(5, 0)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://image.shutterstock.com/image-photo/people-waiting-train-subway-station-260nw-695631085.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Weekday</h5>
+								<p class="card-text">You tell her to schedule the post on a weekday</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(5, 1)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="collapse results" id="question5results">
+		<div class="collapse awesome" id="question5choice0">
+			There were a ton of responses to the post!
+		</div>
+		<div class="collapse okay" id="question5choice1">
+			There weren't many responses to the post. The marketing expert is disappointed.
 		</div>
 	</div>
 
 	<!--Sixth question-->
-	<div class="collapse" id="question1">
-		<div class="card card-body">
-			Sixth question
+	<div class="collapse" id="question6">
+		<div class="card card-body question-section">
+			<img class="question-image" src="https://dogsofsf.com/wp-content/uploads/2014/06/IMG_4188.jpg">
+			<div class="question-text">
+				<h1>Friday Morning</h1>
+				<p>One of the people who helped fund your app asks if you could add one of her dogs. She has a golden retriever and a french bulldog. Which one do you add?</p>
+				<h5>What do you want to know?</h5>
+				<select class="form-select" onchange="dataChosen(6)">
+					<option selected>Choose your question</option>
+					<option value="1">Users by country / most popular dog breeds by country</option>
+					<option value="2">What dog breeds your reviews mention</option>
+					<option value="3">I want to see what dog breeds people search for in the app</option>
+				</select>
+				<div class="collapse" id="question6data">
+					<!-- The data -->
+					<div class="data-reveal">
+						<div class="collapse" id="question6option1">
+							Map showing that a lot of your users are from the UK where the French Bulldog is more popular.
+						</div>
+						<div class="collapse" id="question6option2">
+							Word cloud: Reviews mention a lot of dog breeds, pretty evenly weighted. The biggest ones are dog breeds you already have.
+						</div>
+						<div class="collapse" id="question6option3">
+							Word cloud: Searches mention a lot of dog breeds, pretty evenly weighted. The biggest ones are dog breeds you already have. 
+						</div>
+					</div>
+					<!-- The choices -->
+					<div class="options">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Golden_Retriever_Carlos_%2810581910556%29.jpg/1200px-Golden_Retriever_Carlos_%2810581910556%29.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Golden Retriever</h5>
+								<p class="card-text">You should add her golden retriever, Fluffles.</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(6, 0)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="https://www.thesprucepets.com/thmb/7nOH4fSTB7GIL6ApI6cxjE7OYf4=/1500x844/smart/filters:no_upscale()/breed_profile_frenchbulldog_1117966_hero_1653-3e51f64b939c411e8f5d68d1d2a5aad2.jpg">
+							<div class="card-body">
+								<h5 class="card-title">French Bulldog</h5>
+								<p class="card-text">You should add her french bulldog, Ruffles.</p>
+								<button type="button" class="btn btn-primary" onclick="optionChosen(6, 1)">
+									Choose this Option
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	<div class="collapse results" id="question6results">
+		<div class="collapse awesome" id="question6choice0">
+			Your users from the United States love the new dog!
+		</div>
 
-	<!--Final results-->
-	<div class="collapse" id="final">
-		<div class="card card-body">
-			Results
+		<div class="collapse awesome" id="question6choice1">
+			Your users from the UK love the new dog!
+		</div>
+
+		<div class="final-results">
+			<img class="heading-image" src="https://st2.depositphotos.com/1046535/7312/i/950/depositphotos_73120753-stock-photo-diversity-business-team-jumping.jpg">
+			<div class="heading-text">
+				<h1>What a Week!</h1>
+				<p id="results"></p>
+				<p>Refresh the page to try again!</p>
+			</div>
 		</div>
 	</div>
 
