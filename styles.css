@@ -93,6 +93,10 @@
 	justify-content: space-between;
 }
 
+.data-reveal {
+	min-width: 400px;
+}
+
 .data-reveal img {
 	width: 100%;
 }
@@ -112,4 +116,8 @@
 
 .bad {
 	background-color: indianred;
+}
+
+canvas {
+	margin: 2em;
 }
