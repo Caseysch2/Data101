@@ -341,23 +341,30 @@
 			<img class="question-image" src="https://dogsofsf.com/wp-content/uploads/2014/06/IMG_4188.jpg">
 			<div class="question-text">
 				<h1>Friday Morning</h1>
-				<p>One of the people who helped fund your app asks if you could add one of her dogs. She has a golden retriever and a french bulldog. Which one do you add?</p>
+				<p>The project manager says that one of the investors called and it would mean a lot to them if the team adds her dogs to the app.</p>
+				<p>The team is excited and ready to do this, but it's Friday! They can only get <b>one</b> of the dogs done in time for the weekend.</p>
+				<p>The investor has a golden retriever and a french bulldog. Which should be added?</p>
 				<h5>What do you want to know?</h5>
 				<select class="form-select" onchange="dataChosen(6)">
 					<option selected>Choose your question</option>
-					<option value="1">Users by country / most popular dog breeds by country</option>
-					<option value="2">What dog breeds your reviews mention</option>
-					<option value="3">I want to see what dog breeds people search for in the app</option>
+					<option value="1">What are the most popular dogs in the countries we have the most users?</option>
+					<option value="2">What dog breeds do people try to search for in the app?</option>
+					<option value="3">What dog breeds are mentioned in the reviews?</option>
 				</select>
 				<div class="collapse" id="question6data">
 					<!-- The data -->
 					<div class="data-reveal">
 						<div class="collapse" id="question6option1">
-							Map showing that a lot of your users are from the UK where the French Bulldog is more popular.
+							<table>
+								<tr><th>Country</th><th>Most Popular Dog</th><th>App Users</th></tr>
+								<tr><td>United States</td><td>Golden Retriever</td><td>231</td></tr>
+								<tr><td>UK</td><td>French Bulldog</td><td>422</td></tr>
+								<tr><td>Antarctica</td><td>Penguin</td><td>1</td></tr>
+								<tr><td>Canada</td><td>Mixed-breed</td><td>168</td></tr>
+							</table>
 						</div>
-						<div class="collapse" id="question6option2">
-							Word cloud: Reviews mention a lot of dog breeds, pretty evenly weighted. The biggest ones are dog breeds you already have.
-						</div>
+						<img class="collapse" id="question6option2" src="pictures/data/q6a2.png">
+						<img class="collapse" id="question6option3" src="pictures/data/q6a3.png">
 						<div class="collapse" id="question6option3">
 							Word cloud: Searches mention a lot of dog breeds, pretty evenly weighted. The biggest ones are dog breeds you already have.
 						</div>
@@ -405,6 +412,7 @@
 			<div class="heading-text">
 				<h1>What a Week!</h1>
 				<p id="results"></p>
+				<p>A data scientist is an important member of the team! Without someone who knows what data to look for (and how to read it), the team would only be guessing at what their users want. It's your job to make sure the best decisions are made using the information you have!</p>
 				<p>Refresh the page to play again!</p>
 			</div>
 		</div>		

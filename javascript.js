@@ -347,12 +347,6 @@ function drawChart(questionNumber, answerIndex) {
 				}
 			});
 			break;
-		case "6-1":
-			break;
-		case "6-2":
-			break;
-		case "6-3":
-			break;
 		default:
 			// Some options create images, not charts.
 			document.getElementById("question" + questionNumber + "chart").style.display = 'none'
